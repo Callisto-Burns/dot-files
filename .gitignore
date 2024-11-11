@@ -9,3 +9,6 @@
 
 # TMUX config
 !.tmux.conf
+
+# Bashrc
+!.bashrc
