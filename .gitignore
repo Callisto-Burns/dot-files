@@ -1,6 +1,9 @@
 # Ignore everything by default
 *
+
+# Git files
 !.gitignore
+!.gitconfig
 
 # Neovim config
 !.config
