@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+!.gitignore
+
+# Neovim config
+!.config
+!.config/nvim
+!.config/nvim/**/*
+
+# TMUX config
+!.tmux.conf
