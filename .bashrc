@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export TERM='xterm-256color'
+
 # vim command points to nvim
 alias vim='nvim'
 
