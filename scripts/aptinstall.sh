@@ -15,6 +15,7 @@ function install {
 
 # Basics
 install git
+install tmux
 install go
 install npm
 install nodejs
@@ -26,6 +27,7 @@ install python3-venv
 install anaconda
 install make
 install cmake
+install gettext
 
 # Fun stuff
 install figlet

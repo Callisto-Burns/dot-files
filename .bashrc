@@ -126,6 +126,7 @@ alias air='~/go/bin/air'
 
 # go bin
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
