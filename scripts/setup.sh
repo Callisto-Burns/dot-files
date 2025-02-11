@@ -1,8 +1,12 @@
 #!/bin/bash
 
+sudo chmod +x ./*
+
 ./symlink.sh
 ./aptinstall.sh
-./programs.sh
+./neovim_setup.sh
+./docker_setup.sh
+./latex_setup.sh
 
 sudo apt upgrade -y
 
