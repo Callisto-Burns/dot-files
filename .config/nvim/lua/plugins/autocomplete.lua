@@ -112,6 +112,17 @@ return {
           { name = 'path' },
         },
       }
+      require('luasnip.loaders.from_vscode').lazy_load()
+      cmp.setup.filetype('tex', {
+        sources = cmp.config.sources({
+          {name='luasnip'},
+          {name='nvim_lsp'},
+          {name='buffer'},
+        })
+      })
     end,
-  }
+  },
+  {
+    'hrsh7th/cmp-buffer'
+  },
 }
