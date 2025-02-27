@@ -1,4 +1,7 @@
 
+-- clipboard
+vim.opt.clipboard = "unnamedplus"
+
 vim.opt.termguicolors = true
 vim.cmd.colorscheme('tokyonight')
 
