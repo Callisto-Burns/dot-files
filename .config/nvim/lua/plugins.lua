@@ -15,6 +15,18 @@ vim.opt.rtp:prepend(lazypath)
 -- Configure plugins
 require('lazy').setup({
 
+  --{
+  --  "ray-x/lsp_signature.nvim",
+  --  event = "LspAttach",
+  --  opts = {
+  --    hint_enable = true,
+  --    floating_window = true,
+  --    floating_window_above_cur_line = true,
+  --    handler_opts = { border = "rounded" },
+  --    toggle_key = "<C-k>",
+  --  },
+  --},
+
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
   {
@@ -24,6 +36,7 @@ require('lazy').setup({
     -- use opts = {} for passing setup options
     -- this is equivalent to setup({}) function
   },
+  'tpope/vim-fugitive',
   {
     'windwp/nvim-ts-autotag',
     config = true,

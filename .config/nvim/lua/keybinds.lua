@@ -3,10 +3,15 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
 -- Window navigations
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Focus left window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Focus lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Focus upper window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Focus right window' })
+-- I dont really use these in favor of tmux
+-- bound C-k to toggle function signatures instead
+-- vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Focus left window' })
+-- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Focus lower window' })
+-- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Focus upper window' })
+-- vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Focus right window' })
+
+-- Make :W do the same thing as :w
+vim.cmd('command! W w')
 
 -- Diagnostic keymap
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -17,11 +22,17 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- Clear highlights from search
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- Faster line delete
+vim.keymap.set('n', '<leader>d', 'dd', { desc = 'Delete line' })
+
 -- Open NETRW
 -- vim.keymap.set('n', '<leader>pv', ':Explore<CR>', { desc = 'Open NETRW file explorer' })
 
 -- Insert mode bindings
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('i', 'jJ', '<Esc>')
+vim.keymap.set('i', 'Jj', '<Esc>')
+vim.keymap.set('i', 'JJ', '<Esc>')
 vim.keymap.set('i', 'AA', '<C-o>A')
 
 -- Open Neo-Tree fullscreen
