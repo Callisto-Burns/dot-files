@@ -146,3 +146,6 @@ unset __conda_setup
 export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
 export MANPATH="$MANPATH:/usr/local/texlive/2024/texmf-dist/doc/man"
 export INFOPATH="$INFOPATH:/usr/local/texlive/2024/texmf-dist/doc/info"
+
+# Created by `pipx` on 2025-06-07 17:16:47
+export PATH="$PATH:/home/callisto/.local/bin"
