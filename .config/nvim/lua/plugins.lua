@@ -91,6 +91,39 @@ require('lazy').setup({
   },
   {'thedenisnikulin/vim-cyberpunk'},
   {'akai54/2077.nvim'},
+  {
+    'catppuccin/nvim',
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "mocha", -- or "latte", "frappe", "macchiato"
+        transparent_background = false,
+        show_end_of_buffer = false,
+        term_colors = true,
+        dim_inactive = {
+          enabled = false,
+        },
+        integrations = {
+          cmp = true,
+          gitsigns = true,
+          nvimtree = true,
+          treesitter = true,
+          telescope = {
+            enabled = true,
+          },
+          native_lsp = {
+            enabled = true,
+            underlines = {
+              errors = { "undercurl" },
+              hints = { "undercurl" },
+              warnings = { "undercurl" },
+              information = { "undercurl" },
+              },
+            },
+          },
+      }) end,
+  },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },

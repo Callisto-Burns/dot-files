@@ -3,7 +3,7 @@
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme('tokyonight')
+vim.cmd.colorscheme('catppuccin')
 
 vim.opt.number = true
 vim.opt.relativenumber = true
